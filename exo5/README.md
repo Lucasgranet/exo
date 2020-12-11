@@ -14,7 +14,7 @@ Pour valider ceci, afficher la page `index.html` dans votre navigateur internet.
 
 Déployer un serveur tomcat avec l'image `tomcat:7.0` avec pour applicatif ce fichier [WAR](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war)
 
-Pour déployer le WAR, déposer le fichier dans le répertoire */usr/local/tomcat/webapps*
+Pour déployer le WAR, déposer le fichier dans le **répertoire** `/usr/local/tomcat/webapps/`
 
 Accéder ensuite à l'application via votre navigateur à l'adresse suivante : http://une-adresse:un-port/sample/
 
