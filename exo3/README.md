@@ -21,3 +21,10 @@
 7. Créer un script/function Shell permettant d'arreter tous les containers qui sont en fonctionnement. 
 
 8. Afficher les containers stoppés.
+
+## Assez malin ?
+
+1. Démarrer un container en arrière plan. L'image a utilisé est `jpetazzo/clock`
+
+2. Trouvez au moins un moyen de **stopper** le container sans passer par les commandes `docker stop`, `docker pause`, `docker kill`.
+
