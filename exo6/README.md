@@ -4,11 +4,9 @@
 
 ### Information sur PostgreSQL
 
-PostGreSQL, dans une même version majeure, utilise exactement le même filesystem pour stocker ses données.
+PostGreSQL, dans une même version majeure, utilise le même filesystem pour stocker ses données.
 
-Donc, la version 11.0 et 11.10  utilise la même structure de fichier pour stocker les données.
-
-
+Donc, la version 11.0 et 11.10  utilise la même structure de fichier pour stocker les données. Ainsi la version 11.0 peut lire des fichiers écrits par la vers 11.10 (et vice-versa).
 
 ## ???
 
