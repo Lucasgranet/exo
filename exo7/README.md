@@ -11,3 +11,7 @@
 * Une instance PHPMyAdmin (à l'aide de l'image `phpmyadmin`)
   * Sur le port 8090
   * L'instance PHPMyAdmin **doit être préconfigurée** avec les deux instances MySQL
+
+2. Rajouter la construction d'un service qui affichera un site/page HTML personnalisé.
+   1. L'image utilisé sera `nginx`.
+   2. Les fichiers ne seront pas monter à travers un volume, mais seront intégrés à l'image.

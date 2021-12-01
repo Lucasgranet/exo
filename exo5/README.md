@@ -26,7 +26,7 @@ En utilisant l'image docker `maven:3-jdk-11`, réaliser une image de façon à :
 
 - Compiler le projet UNE seule fois (à l'aide de la commande `mvn package` dans le répertoire du projet, au niveau du fichier `pom.xml`). Pour cela, il faut que les fichiers sources soit dans l'image.
   - Il ne faut pas que le projet se compile à tous les lancements de container. Uniquement durant la phase de `build` de l'image.
-- De démarrer le service SpringBoot à l'aide fichier `.jar`, générer dans le répertoire `./target/` suite à la compilation, avec la commande suivante `java -jar spring-boot-0.0.1-SNAPSHOT.jar`
+- De démarrer le service SpringBoot à l'aide fichier `.jar`, généré dans le répertoire `./target/` suite à la compilation, avec la commande suivante `java -jar spring-boot-0.0.1-SNAPSHOT.jar`
   - Par défaut, le serveur SpringBoot démarre sur le port 8080
 
 **Bonus** : Optimiser la taille de l'image en supprimant tout ce qui n'est pas nécéssaire pour le démarrage du service  (le fichier `.jar` est totalement **autonome** - vous pouvez supprimer les dépendances et le code source !)
