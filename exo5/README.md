@@ -31,4 +31,4 @@ En utilisant l'image docker `maven:3-jdk-11`, réaliser une image de façon à :
 
 **Bonus** : Optimiser la taille de l'image en supprimant tout ce qui n'est pas nécéssaire pour le démarrage du service  (le fichier `.jar` est totalement **autonome** - vous pouvez supprimer les dépendances et le code source !)
 
-**Ceci n'est bonne une bonne image pour une production**, à ne pas reproduire. Voir la CI/CD.
+**Ceci n'est pas une bonne image pour une production/distribution**, à ne pas reproduire. Voir la CI/CD.
