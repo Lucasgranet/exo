@@ -20,7 +20,7 @@ Accéder ensuite à l'application via votre navigateur à l'adresse suivante : `
 
 ### Serveur SpringBoot - Tomcat (The fashion way)
 
-Cloner le projet [Spring-Boot Hello World](https://forge.granux.fr/ics/spring-hello-world) sur votre poste.
+Cloner le projet [Spring-Boot Hello World](https://forge.cpe.granux.fr/docker/spring-hello-world) sur votre poste.
 
 En utilisant l'image docker `maven:3-jdk-11`, réaliser une image de façon à :
 
