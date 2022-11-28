@@ -4,7 +4,7 @@
 
 1. Construisez un docker-compose qui permettra de monter la stack suivante:
 
-* Deux sites Wordpress (à l'aide de l'image `wordress`)
+* Deux sites Wordpress (à l'aide de l'image `wordpress`)
   * Un wordpress sur le port 8080, l'autre sur le port 8088
 * Deux instances MySQL **différentes** (à l'aide de l'image `mysql:8`)
   * Les bases doivent **être persistées sur le disque**
