@@ -53,7 +53,7 @@ Donc, la version 11.0 et 11.10  utilise la même structure de fichier pour stock
 ## Docker exec
 
 1. Réaliser un backup de l'instance PG à l'aide de la commande `pg_dump -U postgres <dbName>`
-   1. Une online commande qui permet de Gzip à la voler puis de stocker le résultat sur le host (utilisation de `| gzip >` )
+   1. Une one-line-command qui permet de Gzip à la voler puis de stocker le résultat sur le host (utilisation de `| gzip >` )
 
 2. Démarrer une nouvelle instance de PG et charger le dump précédemment réaliser dans cette nouvelle instance
    1. Vérifier que votre import s'est bien réaliser.
