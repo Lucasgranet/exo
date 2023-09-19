@@ -4,7 +4,7 @@
 
 1. Démarrer Bash en intéractif dans un container, avec pour image de base `centos:7`
 
-2. Télécharger le fichier http://artii.herokuapp.com/make?text=Hello avec Curl dans un **fichier**
+2. Télécharger le fichier <http://ifconfig.me> avec Curl dans un **fichier**
 
 3. Afficher le fichier dans le **container**
 
