@@ -24,8 +24,9 @@
 2. Créer un nouveau repository dans votre namespace.
 
 3. Publier l'image créé dans la partie 1 dans ce repository (poussez les trois versions de votre image dans le même repository):
-   - Vous allez devoir vous logger au registry DockerHub. Utilisez la commande `docker login` pour effectuer cette authentification *.
+   - Vous allez devoir vous logger au registry DockerHub. Utilisez la commande `docker login` pour effectuer cette authentification .
    - Pour créer une nouvelle image/tag, vous pouvez utiliser la commande `docker tag <img_src:tag> <img_dst:tag>`
+   - Utiliser la commande `docker push <img:tag>` pour publier votre image sur le registry par défault (docker.hub)
 
 4. Supprimer les image en local.
 
