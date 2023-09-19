@@ -14,7 +14,7 @@
    - **Attention**, je veux pouvoir utiliser l'argument `-a` sans forcément avoir l'argument `-F`
    - Pour un petit train, utiliser l'argument `-l`
    - Le tag de cette version de l'image sera `:2nd`
-6. Faites en sorte que l'image Docker affiche **toujours** un train de petit taille.
+6. En plus des comportements précédents, faites en sorte que le train soit de petite taille.
    - Le tag de cette image sera `:3rd`
 
 ## Part 2 Publication d'une image Docker
