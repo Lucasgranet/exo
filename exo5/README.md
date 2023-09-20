@@ -29,6 +29,19 @@ En utilisant l'image docker `maven:3-jdk-11`, réaliser une image de façon à :
 - De démarrer le service SpringBoot à l'aide fichier `.jar`, généré dans le répertoire `./target/` suite à la compilation, avec la commande suivante `java -jar spring-boot-0.0.1-SNAPSHOT.jar`
   - Par défaut, le serveur SpringBoot démarre sur le port 8080
 
+> Ceci n'est pas une bonne image pour une production/distribution (image lourde), évitez de reproduire. Nous verrons dans le chapitre CI/CD la bonne façon de faire image avec du code source.
+
 **Bonus** : Optimiser la taille de l'image en supprimant tout ce qui n'est pas nécéssaire pour le démarrage du service  (le fichier `.jar` est totalement **autonome** - vous pouvez supprimer les dépendances et le code source !)
 
-**Ceci n'est pas une bonne image pour une production/distribution**, à ne pas reproduire. Voir la CI/CD.
+## Pré-action avant le lancement de Nginx
+
+Réliser une nouvelle image Docker à partir de l'image `nginx:alpine-slim` dans laquelle:
+
+- vous stockerez dans le fichier `/usr/share/nginx/html/index.html` le contenu de la page <http://ifconfig.me>
+- vous lancerez le processus Nginx pour exposer le fichier à travers le serveur Web <http://localhost:80/index.html>
+
+Informations:
+
+1. L'image `nginx:alpine-slim` est une image optimisée (slim). Le binaire cURL n'est par example par présent par défaut.
+2. La distribution Linux de cette image est Alpine. Le gestionnaire de paquet est n'y APT, n'y YUM. A vous de le trouver.
+3. Vous allez devoir exécuter des commandes avant le lancement du processus principal Nginx (`nginx -g "daemon off;"`)
