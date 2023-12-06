@@ -37,11 +37,19 @@ En utilisant l'image docker `maven:3-jdk-11`, réaliser une image de façon à :
 
 Réliser une nouvelle image Docker à partir de l'image `nginx:alpine-slim` dans laquelle:
 
-- vous stockerez dans le fichier `/usr/share/nginx/html/index.html` le contenu de la page <http://ifconfig.me>
-- vous lancerez le processus Nginx pour exposer le fichier à travers le serveur Web <http://localhost:80/index.html>
+- vous stockerez dans le fichier `/usr/share/nginx/html/index.html` le contenu de la page <http://ifconfig.me> __au démarrage__ du container
+- vous lancerez le processus Nginx pour exposer ensuite le fichier à travers le serveur Web <http://localhost:80/index.html>
 
 Informations:
 
-1. L'image `nginx:alpine-slim` est une image optimisée (slim). Le binaire cURL n'est par example par présent par défaut.
+1. L'image `nginx:alpine-slim` est une image optimisée (slim). Le binaire cURL n'est, par example, pas présent par défaut.
 2. La distribution Linux de cette image est Alpine. Le gestionnaire de paquet est n'y APT, n'y YUM. A vous de le trouver.
-3. Vous allez devoir exécuter des commandes avant le lancement du processus principal Nginx (`nginx -g "daemon off;"`)
+3. Vous allez devoir exécuter des commandes avant le lancement du processus principal Nginx. Pour lancer Nginx en mode conteneur, vous devez utiliser `nginx -g "daemon off;"`
+
+### Réaliser la plus petite image possible
+
+Créer la plus petite image docker qui permettra de réaliser la même chose. Tous les coups sont permis !!
+
+A battre: 170Ki
+
+(bonne chance ;))
