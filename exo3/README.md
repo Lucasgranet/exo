@@ -2,7 +2,7 @@
 
 ## Gestion des containers
 
-1. Démarrer un container en arrière plan. L'image a utilisé est `jpetazzo/clock`
+1. Démarrer un container en arrière plan. L'image a utilisé est `granetlucas/clock`
 
 2. Afficher et suivez la sortie de logs (l'équivalent de tail -f) sur votre terminal. 
 
@@ -24,7 +24,11 @@
 
 ## Assez malin ?
 
-1. Démarrer un container en arrière plan. L'image a utilisé est `jpetazzo/clock`
+1. Démarrer un container en arrière plan. L'image a utilisé est `granetlucas/clock`
 
 2. Trouvez au moins un moyen de **stopper** le container sans passer par les commandes `docker stop`, `docker pause`, `docker kill`.
 
+Quelques pistes/commandes:
+
+- ps
+- docker exec / https://forge.cpe.granux.fr/docker/clock/-/blob/main/entrypoint.bash
