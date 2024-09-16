@@ -4,7 +4,8 @@
 
 1. Démarrer Bash en intéractif dans un container, avec pour image de base `rockylinux:9`
 
-2. Télécharger le fichier <http://ifconfig.me> avec Curl dans un **fichier**
+2. Télécharger le fichier <http://ifconfig.me> avec la commande `wget` dans un **fichier**
+  * Faites le nécéssaire pour que la commande fonctionne dans votre container
 
 3. Afficher le fichier dans le **container**
 
