@@ -6,7 +6,7 @@ Pour valider que votre installation a été correctement effectuer, valider les 
 
 ```bash
 docker info
-docker run --rm centos:7 date
+docker run --rm rockylinux:9 date
 ```
 
 Si vous devez mettre un `sudo` devant pour obtenir la date, utiliser la commande suivante pour ajouter votre utilisateur au groupe Docker
